@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 const useScrollReveal = (threshold = 0.15) => {
   const ref = useRef(null);
@@ -637,6 +638,7 @@ export default function Portfolio() {
           <span style={{ color: "#00d4ff" }}>susheelkumaar3@gmail.com</span>
         </p>
       </footer>
+      <Analytics />
     </div>
   );
 }
