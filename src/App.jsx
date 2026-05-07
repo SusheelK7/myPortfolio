@@ -360,15 +360,74 @@ export default function Portfolio() {
           .nav-link {
             padding: 8px 12px;
           }
-          .hero-grid { grid-template-columns: 1fr !important; text-align: center; }
-          .hero-avatar { margin: 0 auto; }
-          .hero-avatar > div { width: 240px !important; height: 300px !important; }
+          .grid-bg {
+            padding-top: 40px;
+            padding-bottom: 40px;
+          }
+          .hero-grid {
+            grid-template-columns: 1fr !important;
+            text-align: center;
+            gap: 36px !important;
+          }
+          .hero-grid > div:first-child {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          .hero-grid h1 {
+            font-size: clamp(32px, 10vw, 48px);
+          }
+          .hero-avatar {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 280px;
+          }
+          .hero-avatar > div {
+            width: 220px !important;
+            height: 260px !important;
+          }
+          .hero-avatar img {
+            width: 100%;
+            height: auto;
+            display: block;
+          }
+          .hero-grid > div > div {
+            width: 100%;
+          }
+          .hero-grid .btn-primary,
+          .hero-grid .btn-secondary {
+            width: 100%;
+            max-width: 100%;
+          }
+          .hero-grid .btn-primary {
+            padding: 14px 18px;
+          }
+          .hero-grid .btn-secondary {
+            padding: 14px 18px;
+          }
+          .hero-grid .btn-primary,
+          .hero-grid .btn-secondary,
+          .hero-grid .section-label,
+          .hero-grid p,
+          .hero-grid span {
+            text-align: center;
+          }
+          .hero-grid .section-label {
+            margin-bottom: 16px;
+          }
+          .hero-grid .btn-primary,
+          .hero-grid .btn-secondary {
+            justify-content: center;
+          }
           .skills-grid { grid-template-columns: 1fr !important; }
           .projects-grid { grid-template-columns: 1fr !important; }
           .card-3d { padding: 24px !important; }
           .btn-primary, .btn-secondary {
             width: 100%;
             max-width: 320px;
+          }
+          .orb {
+            display: none;
           }
         }
       `}</style>
