@@ -477,7 +477,7 @@ export default function Portfolio() {
               <button className="btn-secondary" onClick={() => scrollTo("Contact")}>Contact Me</button>
             </div>
             <div style={{ display: "flex", gap: 24, marginTop: 40, color: "#475569", fontSize: 13, fontFamily: "'DM Mono',monospace" }}>
-              <span>📍 Rawalpindi, Pakistan</span>
+              <span>📍 Islamabad, Pakistan</span>
               <span>🎓 BSCS 2023–2027</span>
             </div>
           </div>
@@ -678,7 +678,7 @@ export default function Portfolio() {
             {[
               { icon: "📧", label: "Email", value: "susheelkumaar3@gmail.com" },
               { icon: "📱", label: "Phone", value: "+92-324-6091924" },
-              { icon: "📍", label: "Location", value: "Rawalpindi, Pakistan" },
+              { icon: "📍", label: "Location", value: "Islamabad, Pakistan" },
             ].map((c) => (
               <div key={c.label} style={{ textAlign: "center" }}>
                 <div style={{ fontSize: 24, marginBottom: 6 }}>{c.icon}</div>
