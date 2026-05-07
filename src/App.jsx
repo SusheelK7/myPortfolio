@@ -347,10 +347,29 @@ export default function Portfolio() {
         .contact-input::placeholder { color: #334155; }
 
         @media (max-width: 768px) {
+          .navbar-card {
+            left: 12px;
+            right: 12px;
+            transform: none;
+            width: auto;
+            padding: 12px 14px;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px;
+          }
+          .nav-link {
+            padding: 8px 12px;
+          }
           .hero-grid { grid-template-columns: 1fr !important; text-align: center; }
           .hero-avatar { margin: 0 auto; }
+          .hero-avatar > div { width: 240px !important; height: 300px !important; }
           .skills-grid { grid-template-columns: 1fr !important; }
           .projects-grid { grid-template-columns: 1fr !important; }
+          .card-3d { padding: 24px !important; }
+          .btn-primary, .btn-secondary {
+            width: 100%;
+            max-width: 320px;
+          }
         }
       `}</style>
 
@@ -380,7 +399,7 @@ export default function Portfolio() {
 
         <div
           ref={heroRef}
-          className={`reveal-up ${heroVisible ? "visible" : ""}`}
+          className={`reveal-up hero-grid ${heroVisible ? "visible" : ""}`}
           style={{ maxWidth: 900, width: "100%", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 60, alignItems: "center" }}
         >
           <div>
